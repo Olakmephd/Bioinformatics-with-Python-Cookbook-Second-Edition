@@ -14,8 +14,7 @@ RUN conda config --add channels bioconda
 RUN conda config --add channels r
 RUN conda install -y pip ipython python=3.6
 RUN conda install -y -c r r-ggplot2 r-gridextra rpy2
-#RUN conda install -y -c conda-forge statsmodels
-#RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
+#RUN conda install -y -c conda-forge statsmodels #RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
 RUN apt-get install -y plink1.9
 RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop trimal eigensoft pysam
 RUN conda remove -y numpy
