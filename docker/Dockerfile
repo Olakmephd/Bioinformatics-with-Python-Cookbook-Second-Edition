@@ -5,7 +5,7 @@ MAINTAINER Tiago Antao <tiagoantao@gmail.com>
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git wget build-essential unzip graphviz libgraphviz-dev pkg-config swig libx11-dev libgsl0-dev libopenblas-dev liblapacke-dev
 RUN apt-get install -y samtools mafft muscle raxml tabix
 
-R
+#R
 RUN apt-get install -y r-bioc-biobase
 
 RUN conda update -n base -c defaults conda --force && conda update -y --all
